@@ -189,12 +189,8 @@ function generatePage(teamData) {
     })
     .then((writeFileResponse) => {
       console.log(writeFileResponse);
-      //return copyFile();
     })
-    /* .then((copyFileResponse) => {
-      console.log(copyFileResponse);
-    })
-     */.catch((err) => {
+    .catch((err) => {
       console.log(err);
     });
 }
