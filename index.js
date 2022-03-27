@@ -77,13 +77,11 @@ function initialPrompt() {
 
 function promptEmployee() {
   inquirer.prompt(employeeQuestionsArr).then(({ choice }) => {
-    console.log(choice);
     if (choice == "Add an Engineer") {
       promptEngineer();
     } else if (choice == "Add an Intern") {
       promptIntern();
     } else {
-      console.log(teamArr);
       generatePage(teamArr);
     }
   });
@@ -163,7 +161,6 @@ function promptIntern() {
 
 initialPrompt()
   .then((managerData) => {
-    console.log(managerData);
     const manager = new Manager(
       managerData.name,
       managerData.id,
@@ -171,8 +168,6 @@ initialPrompt()
       managerData.officeNumber
     );
     teamArr.push(manager);
-    console.log(teamArr);
-    console.log(4);
     promptEmployee();
   })
   .catch((err) => {
@@ -184,7 +179,6 @@ function generatePage(teamData) {
     resolve(generateHTML(teamData));
   })
     .then((pageHTML) => {
-      console.log(pageHTML);
       return writeFile(pageHTML);
     })
     .then((writeFileResponse) => {
