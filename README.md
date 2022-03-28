@@ -3,7 +3,7 @@ This is a Node.js application that accepts user input about the employees on the
 
 This application also includes jest tests for the functionality of the methods in each of the classes.
 
-A video demonstration of the application in action [is linked below](#Video-Demonstration), and a sample of the generated HTML file can be seen in the dist directory of this repository.
+A video demonstration of the application in action [is linked below](#Video-Demonstration), and a sample of the [generated HTML file](https://github.com/MeghanPaul/Team-Profile-Generator/blob/Develop/dist/index.html) can be seen in the dist directory of this repository.
 
 ## Tools Used
 JavaScript, Node.js, NPM, Inquirer, Jest, OOP, HTML, Bootstrap
